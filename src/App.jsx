@@ -1,19 +1,15 @@
-import { ThemeProvider } from "styled-components" 
-import Header from "./components/Header/Header"
+import Header from "./components/Header"
+import { GlobalStyle } from "./styles/GlobalStyles"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 function App() {
-  
-  const theme = {
-    colors: {
-      header: "#ebfbff",
-    }
-  }
-
 
   return (
-    <ThemeProvider theme={theme}>
-      <Header />
-    </ThemeProvider>
+     
+      
+        <GlobalStyle />
+        <Header />
+    
     
     
   )

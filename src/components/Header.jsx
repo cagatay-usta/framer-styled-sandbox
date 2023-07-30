@@ -11,6 +11,9 @@ const Navbar = styled.nav`
   align-items: center;
 `;
 
+const NavItems = styled.div`
+  
+`
 const Logo =styled(Link)``;
 
 
@@ -23,7 +26,6 @@ const Header = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/services">Services</NavLink>
-
       </NavItems>
 
     </Navbar>

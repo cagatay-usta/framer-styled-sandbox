@@ -11,10 +11,20 @@ const Navbar = styled.nav`
   align-items: center;
 `;
 
-const NavItems = styled.div`
-  
+const NavItems = styled.div``;
+
+const NavbarLink = styled(NavLink)`
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
 `
-const Logo =styled(Link)``;
+const Logo =styled(Link)`
+  color: #fff;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+`;
 
 
 
@@ -23,9 +33,9 @@ const Header = () => {
     <Navbar>
       <Logo to="/">Animal</Logo>
       <NavItems>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/services">Services</NavLink>
+        <NavbarLink to="/">Home</NavbarLink>
+        <NavbarLink to="/about">About</NavbarLink>
+        <NavbarLink to="/services">Services</NavbarLink>
       </NavItems>
 
     </Navbar>

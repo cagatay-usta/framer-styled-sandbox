@@ -4,7 +4,8 @@ import { Link, NavLink } from "react-router-dom"
 
 const Navbar = styled.nav`
   height: 60px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.084);
+  backdrop-filter: drop-shadow(4px 4px 4px black);
   padding: 0rem;
   display: flex;
   justify-content: space-between;

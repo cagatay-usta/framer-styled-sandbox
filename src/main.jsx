@@ -5,11 +5,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './Pages/About.jsx'
 import Services from './Pages/Services.jsx'
 import Home from './Pages/Home.jsx'
+import NotFound from './Pages/NotFound.jsx'
+import global from "./styles/global.css"
 
 const router = createBrowserRouter([
   {
     path:"/",
     element:<App />,
+    errorElement: <NotFound />,
     children: [
       {
         index:true,

@@ -11,4 +11,5 @@ export const GlobalStyle = createGlobalStyle`
     #root{
         margin:0 auto;
     }
+
 `

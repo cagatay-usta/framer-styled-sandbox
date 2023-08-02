@@ -1,6 +1,5 @@
-import styled from "styled-components"
-import { Link, NavLink } from "react-router-dom"
-
+import styled from "styled-components";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = styled.nav`
   height: 60px;
@@ -18,16 +17,14 @@ const NavbarLink = styled(NavLink)`
   color: #fff;
   padding: 1rem;
   text-decoration: none;
-`
-const Logo =styled(Link)`
+`;
+const Logo = styled(Link)`
   color: #fff;
   padding-left: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 `;
-
-
 
 const Header = () => {
   return (
@@ -38,9 +35,8 @@ const Header = () => {
         <NavbarLink to="/about">About</NavbarLink>
         <NavbarLink to="/services">Services</NavbarLink>
       </NavItems>
-
     </Navbar>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

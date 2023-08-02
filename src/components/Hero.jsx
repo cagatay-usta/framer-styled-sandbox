@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { motion } from 'framer-motion';
 
 const Section = styled.section`
   background: url(${({ image }) => image && image}) center;
@@ -8,7 +9,7 @@ const Section = styled.section`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-top: -60px;
+  z-index: -1;
 `;
 
 const Container = styled.div`
@@ -47,10 +48,12 @@ function Hero({ image, title, description }) {
   return (
     <Section image={image}>
       <Container>
-        <h1>{ title }</h1>
-        <p>{description}</p>
-        <button>Learn more</button>
-      </Container>
+      
+          <h1>{ title }</h1>
+          <p>{description}</p>
+          <button>Learn more</button>
+      
+        </Container>
     </Section>
   )
 }

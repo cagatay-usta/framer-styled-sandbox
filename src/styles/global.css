@@ -5,6 +5,30 @@
   box-sizing:border-box;
   font-family: 'Open Sans', sans-serif; 
 }
+html {
+  
+  background-color: coral;
+}
 #root{
   margin:0 auto;
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
 }

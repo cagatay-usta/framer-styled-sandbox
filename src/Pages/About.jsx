@@ -1,3 +1,4 @@
+import PrivacyScreen from "../animations/PrivacyScreen";
 import TransitionBlack from "../animations/transition";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -9,22 +10,23 @@ function About() {
   return (
     <>
 
-<TransitionBlack key={location.pathname} /> 
+{/* <TransitionBlack key={location.pathname} /> 
         <motion.div
         key={location.pathname}
           initial={{ y: "-100%"}}
           animate={{ y: "0%" }}
           transition={{ duration: 1, ease: "easeOut" }}
           exit={{ y: "100%" }}
-        >
+        > */}
       
         <Hero
           image={Image}
           title="Beauty of the Nature"
           description="You can find it here"
         />
+        <PrivacyScreen />
 
-</motion.div>
+{/* </motion.div> */}
     </>
   );
 }

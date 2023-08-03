@@ -5,12 +5,6 @@ import React, { useState } from "react";
 import { Outlet, useLocation, useOutlet } from "react-router-dom";
 import TransitionBlack from "./animations/transition";
 
-const AnimatedOutlet = () => {
-  const o = useOutlet();
-  const [outlet] = useState(o);
-
-  return <>{outlet}</>;
-};
 
 function App() {
   const location = useLocation();
@@ -19,11 +13,11 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <AnimatePresence mode="popLayout" initial={false}>
+      <AnimatePresence mode="wait" initial={false}>
         {/* <TransitionBlack key={location.pathname} /> */}
         <motion.div
         key={location.pathname}
-          initial={{ y: "-100%" }}
+          initial={{ y: "-100%"}}
           animate={{ y: "0%" }}
           transition={{ duration: 1, ease: "easeOut" }}
           exit={{ y: "100%" }}
